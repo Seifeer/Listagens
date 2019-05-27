@@ -17,6 +17,9 @@ public class Comida {
 
     public static List<Comida> getComidas(){
         List<Comida> comidas =new ArrayList<>();
+        comidas.add(new Comida("Coxinha Frango","Trigo+Frango+Sal", 3));
+        comidas.add(new Comida("Coxinha Queijo","Trigo+Frango+Sal", 3));
+        comidas.add(new Comida("Coxinha ","Trigo+Frango+Sal", 3));
         comidas.add(new Comida("Coxinha","Trigo+Frango+Sal", 3));
         return comidas;
     }
