@@ -1,5 +1,8 @@
 package com.example.listagens;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Comida {
 
     private String nome;
@@ -10,6 +13,12 @@ public class Comida {
         this.nome = nome;
         this.ingredientes = ingredientes;
         this.valor = valor;
+    }
+
+    public static List<Comida> getComidas(){
+        List<Comida> comidas =new ArrayList<>();
+        comidas.add(new Comida("Coxinha","Trigo+Frango+Sal", 3));
+        return comidas;
     }
 
     public String getNome() {
