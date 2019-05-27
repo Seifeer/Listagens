@@ -2,7 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="120"
-    android:orientation="vertical">
+    android:background="#88C1EE"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:paddingLeft="6dp"
+    android:paddingTop="6dp"
+    android:paddingRight="6dp"
+    android:paddingBottom="6dp">
 
     <TextView
         android:id="@+id/txt_comida_nome"
@@ -22,5 +28,8 @@
         android:id="@+id/txt_comida_valor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:gravity="right"
+        android:text="TextView"
+        android:textSize="20"
+        android:textStyle="bold|italic" />
 </LinearLayout>

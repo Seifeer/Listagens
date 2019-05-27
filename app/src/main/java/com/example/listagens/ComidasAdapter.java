@@ -36,6 +36,7 @@ public class ComidasAdapter extends RecyclerView.Adapter<ComidasAdapter.ComidaVi
 
         comidaViewHolder.TxtComidaNome.setText(comida.getNome());
         comidaViewHolder.TxtComidaIngredientes.setText(comida.getIngredientes());
+        String valor = String.format("R$ %.2f",)
         comidaViewHolder.TxtComidaValor.setText("R$ "+comida.getValor());
     }
 
