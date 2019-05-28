@@ -51,6 +51,7 @@ public class ComidasAdapter extends RecyclerView.Adapter<ComidasAdapter.ComidaVi
         TextView TxtComidaNome;
         TextView TxtComidaIngredientes;
         TextView TxtComidaValor;
+        TextView btnAdicionar;
 
         public ComidaViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -59,13 +60,14 @@ public class ComidasAdapter extends RecyclerView.Adapter<ComidasAdapter.ComidaVi
             TxtComidaNome=itemView.findViewById(R.id.txt_comida_nome);
             TxtComidaIngredientes=itemView.findViewById(R.id.txt_xomida_ingredientes);
             TxtComidaValor=itemView.findViewById(R.id.txt_comida_valor);
+            btnAdicionar= itemView.findViewById(R.id.btn_adicionar);
 
             // Configurar cliks
             itemView.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public  void onClick (View v){
-                    int posicao=getAdapterPosition();
-                    Toast.make(v, "Clicou.", Toast.LENGTH_LONG).show();
+                    Comida comida= comidas.get(getAdapterPosition());
+                    Toast.make(v, comida.getNome()+" adicionado ao pedido", Toast.LENGTH_LONG).show();
                 }
             });
         }

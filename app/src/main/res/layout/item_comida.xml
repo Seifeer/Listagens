@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="110"
+    android:layout_height="140"
     android:background="#88C1EE"
     android:orientation="vertical"
     android:padding="6dp"
@@ -32,4 +32,10 @@
         android:text="TextView"
         android:textSize="20"
         android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btn_adicionar"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:text="Adicionar" />
 </LinearLayout>
