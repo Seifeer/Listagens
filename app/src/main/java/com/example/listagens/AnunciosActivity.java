@@ -5,22 +5,22 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-public class ListaComidasActivity extends AppCompatActivity {
+public class AnunciosActivity extends AppCompatActivity {
 
-    private RecyclerView rvComidas;
+    private RecyclerView rvAnuncios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_comidas);
-    
+        setContentView(R.layout.activity_anuncios);
+
         atualizarViews();
     }
 
     private void atualizarViews() {
-        ComidasAdapter adapter=new ComidasAdapter(this, Comida.getComidas());
+        AnunciosAdapter adapter=new AnunciosAdapter(this, Anuncio.getAnuncios());
 
-        rvComidas.setAdapter(adapter);
-        rvComidas.setLayoutManager(new LinearLayoutManager(this));
+        rvAnuncios.setAdapter(adapter);
+        rvAnuncios.setLayoutManager(new LinearLayoutManager(this));
     }
 }
