@@ -14,6 +14,7 @@ public class AnunciosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anuncios);
 
+        rvAnuncios=findViewById(R.id.rv_anuncios);
         atualizarViews();
     }
 
